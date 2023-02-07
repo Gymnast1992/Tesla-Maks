@@ -3,6 +3,10 @@ describe("Model S", () => {
     cy.visit("/models");
   });
 
+  it("Should navigate to the Model S page", () => {
+    cy.contains('Plaid').should('be.visible');
+  });
+
   it("Should verify the price of the Model S Dual Motor All-Wheel Drive", () => {
     cy.contains("Order Now").click({ force: true });
     cy.get('[for="$MTS13-Model S"]').should(
@@ -11,7 +15,7 @@ describe("Model S", () => {
     );
   });
 
-  it.only("Should verify the price of the Model S Tri Motor All-Wheel Drive", () => {
+  it("Should verify the price of the Model S Tri Motor All-Wheel Drive", () => {
     cy.contains("Order Now").click({ force: true });
     cy.get('[for="$MTS14-Model S Plaid"]').should(
       "have.text",

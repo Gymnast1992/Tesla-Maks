@@ -5,6 +5,11 @@ describe("Model 3", () => {
     cy.visit("/model3");
   });
 
+  it("Should navigate to the Model 3 page", () => {
+    Model3.textModel3.should('be.visible');
+    Model3.buttonOrderNow.should('be.visible')
+  });
+
   it("Should verify the price of the Model 3 Rear-Wheel Drive", () => {
     Model3.buttonOrderNow.click({ force: true });
     Model3.fieldRearWheelDrive.should(
