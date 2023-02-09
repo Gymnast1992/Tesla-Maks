@@ -1,12 +1,14 @@
+import Homepage from "../fixtures/pom/homepage.page"
+
 describe("Homepage", () => {
   beforeEach(() => {
     cy.visit("/");
   });
 
   it("Should navigate to homepage", () => {
-    cy.contains("Menu").should("be.visible");
-    cy.contains("Custom Order").should("be.visible");
-    cy.contains("Demo Drive").should("be.visible");
+    Homepage.buttonMenu.should("be.visible");
+    Homepage.buttonCustomerOrder.should("be.visible");
+    Homepage.buttonDemoDrive.should("be.visible");
   });
 
   it("", () => {});
