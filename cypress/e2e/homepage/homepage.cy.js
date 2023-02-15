@@ -1,4 +1,4 @@
-import Homepage from "../fixtures/pom/homepage.page"
+import Homepage from "../../fixtures/pom/homepage.page"
 
 describe("Homepage", () => {
   beforeEach(() => {

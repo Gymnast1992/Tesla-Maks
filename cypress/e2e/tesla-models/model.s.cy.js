@@ -1,4 +1,4 @@
-import ModelS from "../fixtures/pom/model.s.page"
+import ModelS from "../../fixtures/pom/tesla-models/model.s.page";
 
 describe("Model S", () => {
   beforeEach(() => {
@@ -6,7 +6,7 @@ describe("Model S", () => {
   });
 
   it("Should navigate to the Model S page", () => {
-    ModelS.textPlaid.should('be.visible');
+    ModelS.textPlaid.should("be.visible");
   });
 
   it("Should verify the price of the Model S Dual Motor All-Wheel Drive", () => {
