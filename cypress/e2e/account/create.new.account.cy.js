@@ -11,6 +11,8 @@ describe("Create new account", () => {
 
   it("Should be able to verify the input fields on the create new account page", () => {
     const data = AccountData.credentials;
+    const randomFirstName = CreateAccount.randomNoNumbersData(5);
+    const randomLastName = CreateAccount.randomNoNumbersData(7);
 
     Homepage.buttonMenu.click();
     SideMenu.buttonAccount.click();
@@ -25,8 +27,8 @@ describe("Create new account", () => {
     CreateAccount.lableH1.should("contains.text", "Create Account");
 
     //Input in the existing data
-    CreateAccount.inputFirstName.type(data.firstName);
-    CreateAccount.inputLastName.type(data.lastName);
+    CreateAccount.inputFirstName.type(randomFirstName);
+    CreateAccount.inputLastName.type(randomLastName);
 
     //Because there is the Captcha we can't automate this test case
     //Just for verificatin the input field I'll put there the RANDOM input data!!!

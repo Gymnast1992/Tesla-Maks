@@ -14,6 +14,14 @@ class CreateAccount {
             text += possible.charAt(Math.floor(Math.random() * possible.length));
         return text;
     }
+
+    randomNoNumbersData(length){
+        var text = "";
+        var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+        for( var i=0; i < length; i++ )
+            text += possible.charAt(Math.floor(Math.random() * possible.length));
+        return text;
+    }
 }
 
 export default new CreateAccount()
