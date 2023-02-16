@@ -10,6 +10,4 @@ describe("Homepage", () => {
     Homepage.buttonCustomerOrder.should("be.visible");
     Homepage.buttonDemoDrive.should("be.visible");
   });
-
-  it("", () => {});
 });
