@@ -8,7 +8,7 @@ describe("Side Menu", () => {
 
   it("Should loop through side menu items and click on the item with name Roadster", () => {
     Homepage.buttonMenu.click();
-    SideMenu.sideMenuItems.should("have.length", 22);
+    SideMenu.sideMenuItems.should("have.length", 21);
     SideMenu.navigateToSideMenuItem('ROADSTER');
   });
 });
