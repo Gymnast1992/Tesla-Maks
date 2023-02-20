@@ -1,4 +1,3 @@
-import SideMenu from "../../fixtures/pom/side-menu/side.menu.page";
 import Shop from "../../fixtures/pom/shop/shop.page";
 
 describe("Shop", () => {
