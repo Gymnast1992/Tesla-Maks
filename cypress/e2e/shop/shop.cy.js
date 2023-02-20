@@ -10,7 +10,7 @@ describe("Shop", () => {
       cy.get('[href="/"]').should('contains.text', 'Shop')
     });
 
-    it.only("Should loop through the menuContent and click on the right button", () => {
+    it("Should loop through the menuContent and click on the right button", () => {
         Shop.buttonRegionNorthAmerica.click( {force: true});
         Shop.buttonMenu.click();
         Shop.fourShopSections.should('have.length', 4);
