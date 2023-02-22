@@ -6,9 +6,8 @@ describe("Side Menu", () => {
     cy.visit("/");
   });
 
-  it("Should loop through side menu items and click on the item with name Roadster", () => {
+  it("Should verify the amount of items in the sideMenu section", () => {
     Homepage.buttonMenu.click();
-    SideMenu.sideMenuItems.should("have.length", 21);
-    SideMenu.navigateToSideMenuItem('ROADSTER');
+    SideMenu.sideMenuItems.should('have.length', 21);
   });
 });

@@ -1,6 +1,6 @@
 class Shop {
-  get fourShopSections() {
-    return cy.get(".nav-mobile-categories");
+  get categoryMenu() {
+    return cy.get(".category-menu .tds-site-nav-item");
   }
   get buttonMenu() {
     return cy.contains("Menu");
@@ -11,15 +11,12 @@ class Shop {
     );
   }
 
-  navigateToSideMenuItem() {
-    const menuItems = {};
-
-    this.fourShopSections.forEach(item => {
-      menuItems[item.getText()] = item;
+  navigateToSideMenuItem(item) {
+    this.categoryMenu.each((element) => {
+      if (element.text().includes(item)) {
+        cy.contains(item).click({ force: true });
+      }
     });
-    console.log(menuItems);
-
-    // menuItems[menuItemText].click();
   }
 }
 
