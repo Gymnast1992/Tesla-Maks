@@ -3,7 +3,7 @@ class SideMenu {
     return cy.get('[href="/teslaaccount"]');
   }
   get sideMenuItems() {
-    return cy.get(".tds-modal-content .tds-site-nav-item");
+    return cy.get('.tds-site-nav-items--vertical .tds-site-nav-item-text');
   }
 }
 
