@@ -6,7 +6,7 @@ describe("Side Menu", () => {
     cy.visit("/");
   });
 
-  it("Should verify the amount of items in the sideMenu section", () => {
+  it("Should have 21 items in the sideMenu section", () => {
     Homepage.buttonMenu.click();
     SideMenu.sideMenuItems.should('have.length', 21);
   });
