@@ -16,3 +16,7 @@ To-do:
 2.Create data over api or seed through db in order to avoid ata test colision(when many test work with the same dtat or user use the same data
 
 Per best practices: All tests should be isolated 
+
+##Faker
+How to import:
+import { faker } from '@faker-js/faker';
