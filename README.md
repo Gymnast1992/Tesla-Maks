@@ -4,7 +4,7 @@
 1.Node version 14+
 
 ## How to set up framework:
-1.Clone the repository - ```git clone git@github.com:Gymnast1992/tesla.git```
+1.Clone the repository - ```git clone git@github.com:Gymnast1992/Tesla-Maks.git```
 2.Install all dependencies - ```npm i```
 
 ## How to run tests:
@@ -13,7 +13,7 @@
 
 To-do:
 1.Ask devs to add unique attributes for all actionable items (buttons, text fields, drop downs, etc + text that is on the page);
-2.Create data over api or seed through db in order to avoid ata test colision(when many test work with the same dtat or user use the same data
+2.Create data over api or seed through db in order to avoid ata test colision when many test work with the same dtat or user use the same data
 
 Per best practices: All tests should be isolated 
 
